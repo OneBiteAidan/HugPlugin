@@ -1,0 +1,9 @@
+name: HugPlugin
+version: ${project.version}
+main: io.github.onebiteaidan.hugplugin.HugPlugin
+api-version: 1.16
+authors: [ OneBiteAidan ]
+description: A plugin to allow people to hug eachother
+commands:
+  hug:
+  grouphug:
