@@ -13,7 +13,7 @@ public class GroupHugCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String Label, String args[]) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.DARK_GREEN + "Onebite.Dev" + ChatColor.GRAY + "] " + ChatColor.GREEN +  ((Player)sender).getDisplayName() + " just initiated a group hug! AWWWW!" );
+            Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.GOLD + "TownyTTV" + ChatColor.GRAY + "] " + ChatColor.YELLOW +  ((Player)sender).getDisplayName() + ChatColor.GOLD + " just initiated a group hug! AWWWW!" );
         } else {
             System.out.println(ChatColor.RED + "Sorry this command isn't available via console yet!");
         }

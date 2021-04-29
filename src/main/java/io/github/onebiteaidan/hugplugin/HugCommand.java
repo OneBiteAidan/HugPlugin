@@ -16,7 +16,7 @@ public class HugCommand implements CommandExecutor {
             if (args.length > 0) {
                 final Player target = Bukkit.getPlayerExact(args[0]);
                 if (target instanceof Player) {
-                    Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.DARK_GREEN + "Onebite.Dev" + ChatColor.GRAY + "] " + ChatColor.GREEN +  ((Player)sender).getDisplayName() + " just hugged " + target.getDisplayName() + "! How Cute ^w^");
+                    Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.GOLD + "" + ChatColor.BOLD + "TownyTTV" + ChatColor.GRAY + "] " + ChatColor.YELLOW +  ((Player)sender).getDisplayName() + ChatColor.GOLD + " just hugged " + ChatColor.YELLOW + target.getDisplayName() + ChatColor.GOLD + "! How Cute ^w^");
                 } else {
                     player.sendMessage(ChatColor.RED + "You can only hug a player that is online.");
                 }
