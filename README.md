@@ -6,3 +6,7 @@
 /hug <target player> 
 /grouphug
 ```
+
+**No Permissions Needed**
+
+Still working on a config file to change the text.
