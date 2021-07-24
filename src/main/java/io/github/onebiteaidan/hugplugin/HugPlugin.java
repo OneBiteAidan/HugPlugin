@@ -9,7 +9,10 @@ public final class HugPlugin extends JavaPlugin {
         // Plugin startup logic
         System.out.println("COMMENCE THE HUGGING!");
 
-        getCommand("hug").setExecutor(new HugCommand());
-        getCommand("grouphug").setExecutor(new GroupHugCommand());
+        this.saveDefaultConfig();
+        this.saveConfig();
+
+        getCommand("hug").setExecutor(new HugCommand(this));
+        getCommand("grouphug").setExecutor(new GroupHugCommand(this));
     }
 }
