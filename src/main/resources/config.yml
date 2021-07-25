@@ -1,0 +1,8 @@
+
+prefix: "&6[&e&lHugPlugin&r&6]"
+
+#use '%player%' as a placeholder for the player who executes the command
+#user '%target%' as a placeholder for the player who the command is targeted at
+hug-message: "&eAwww! &6%player% &ejust hugged &6%target%&e! How cute!"
+
+grouphug-message: "&eAwww! &6%player$ &ejust initiated a group hug!"

@@ -9,11 +9,26 @@ import org.bukkit.entity.Player;
 
 public class GroupHugCommand implements CommandExecutor {
 
+    private HugPlugin main;
+
+    public GroupHugCommand(HugPlugin main) {
+        this.main = main;
+    }
+
+    public static String colorize(String message)
+    {
+        return ChatColor.translateAlternateColorCodes('&', message);
+    }
+
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String Label, String args[]) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.GOLD + "TownyTTV" + ChatColor.GRAY + "] " + ChatColor.YELLOW +  ((Player)sender).getDisplayName() + ChatColor.GOLD + " just initiated a group hug! AWWWW!" );
+
+            String prefix = main.getConfig().getString("prefix");
+            String hugMessage = main.getConfig().getString("hug-message").replace("%player%", player.getName());
+
+            Bukkit.getServer().broadcastMessage(colorize(prefix + hugMessage ));
         } else {
             System.out.println(ChatColor.RED + "Sorry this command isn't available via console yet!");
         }
